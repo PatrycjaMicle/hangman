@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Hangman</title>
-    <link rel="stylesheet" href="hangmanStyle.css"></link>
+    <link href="hangman.css" rel="stylesheet"></link>
     <script src="hangmanScript.js"></script>
 </head>
+<body>
 <div id="categoryMenu">
     <h1>Choose a category:</h1>
-    <ul id="categoryList" class="menu">
-        <a href="hangmanFood.html">Food</a>
-        <a href="">Animals</a>
-        <a href="">Cars</a>
-        <a href="">Nature</a>
-    </ul>
+    <div id="firstCategory"><input type="radio" id="food" class="menu" name="food" value="food">
+    <label for="food">Food</label>
+    </div>
+    <div id="secondCategory"><input type="radio" id="animals" class="menu" name="animals" value="animals">
+    <label for="animals">Animals</label>
+    </div>
+    <div id="thirdCategory"><input type="radio" id="countries" class="menu" name="countries" value="countries">
+    <label for="countries">Countries</label>
+    </div>
 </div>
-<body>
+
+<div id="word"></div>
+<div id="hangmanPic">
+    <div id="leftLeg"></div>
+    <div id="rightLeg"></div>
+    <div id="bodyLine"></div>
+    <div id="head"></div>
+    <div id="leftHand"></div>
+    <div id="rightHand"></div>
+</div>
+
+
+
+
 
 </body>
 </html>

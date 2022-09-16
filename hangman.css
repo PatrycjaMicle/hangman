@@ -1,0 +1,67 @@
+
+body{
+    margin:0;
+    background-image: url("background.jpg");
+}
+
+
+
+#leftLeg {
+    background-color: black;
+    width: 100px;
+    height: 8px;
+    transform: rotate(-60deg);
+    position: absolute;
+    top: 350px;
+    left: 750px;
+}
+
+#rightLeg {
+    background-color: black;
+    width: 100px;
+    height: 8px;
+    transform: rotate(60deg);
+    position: absolute;
+    top: 350px;
+    left: 798px;
+}
+
+#bodyLine{
+    background-color: black;
+    width: 100px;
+    height: 8px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 261px;
+    left: 774px;
+}
+
+#head{
+    background: black;
+    border-radius: 50%;
+    left: 787px;
+    position: absolute;
+    top: 140px;
+    width: 75px;
+    height: 75px;
+}
+
+#leftHand {
+    background-color: black;
+    width: 60px;
+    height: 8px;
+    transform: rotate(-145deg);
+    position: absolute;
+    top: 241px;
+    left: 769px;
+}
+
+#rightHand {
+    background-color: black;
+    width: 60px;
+    height: 8px;
+    transform: rotate(145deg);
+    position: absolute;
+    top: 241px;
+    left: 820px;
+}
