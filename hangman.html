@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Hangman</title>
-    <link href="hangman.css" rel="stylesheet"></link>
+    <link href="hangman.css" rel="stylesheet" />
     <script src="hangmanScript.js"></script>
 </head>
 <body>
-<div id="categoryMenu">
-    <h1>Choose a category:</h1>
-    <div id="firstCategory"><input type="radio" id="food" class="menu" name="food" value="food">
-    <label for="food">Food</label>
+<div class="container">
+    <h1> H A N G M A N</h1>
+    <div id="categoryMenu">
+        <h2>Choose a category:</h2>
+        <div class="questions">
+            <div id="firstCategory"><input type="radio" id="food" class="menu" name="food" value="food">
+                <label for="food">Food</label>
+            </div>
+            <div id="secondCategory"><input type="radio" id="animals" class="menu" name="animals" value="animals">
+                <label for="animals">Animals</label>
+            </div>
+            <div id="thirdCategory"><input type="radio" id="countries" class="menu" name="countries" value="countries">
+                <label for="countries">Countries</label>
+            </div>
+        </div>
     </div>
-    <div id="secondCategory"><input type="radio" id="animals" class="menu" name="animals" value="animals">
-    <label for="animals">Animals</label>
+
+    <div id="word"></div>
+    <div id="hangmanPic">
+        <div id="leftLeg"></div>
+        <div id="rightLeg"></div>
+        <div id="bodyLine"></div>
+        <div id="head"></div>
+        <div id="leftHand"></div>
+        <div id="rightHand"></div>
+        <div id="firstLine"></div>
+        <div id="secondLine"></div>
+        <div id="thirdLine"></div>
+        <div id="ground"></div>
     </div>
-    <div id="thirdCategory"><input type="radio" id="countries" class="menu" name="countries" value="countries">
-    <label for="countries">Countries</label>
-    </div>
+    <div style="clear:both"></div>
+
 </div>
-
-<div id="word"></div>
-<div id="hangmanPic">
-    <div id="leftLeg"></div>
-    <div id="rightLeg"></div>
-    <div id="bodyLine"></div>
-    <div id="head"></div>
-    <div id="leftHand"></div>
-    <div id="rightHand"></div>
-</div>
-
-
-
-
-
 </body>
 </html>

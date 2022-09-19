@@ -1,10 +1,53 @@
 
-body{
-    margin:0;
-    background-image: url("background.jpg");
+body {
+    margin: 20px;
+    background-image: url(background.jpg);
+    font-family: monospace;
+    background-size: cover;
 }
 
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: papayawhip;
+}
 
+h2{
+    margin:0;
+}
+
+#word{
+    width: 420px;
+    display: block;
+    height: 600px;
+    background: orange;
+    float: left;
+}
+
+#hangmanPic{
+    width: 250px;
+    height: 600px;
+    display: block;
+    position: relative;
+    float: left;
+}
+
+#categoryMenu {
+    display: flex;
+    flex-direction: column;
+    position:static;
+    background: rgba(60, 60, 60, 0.6);
+    padding: 15px;
+    width: 290px;
+    border-radius: 30px;
+    color: ghostwhite;
+}
+
+.questions{
+    font-size: large;
+    margin-top: 8px;
+    display: flex;
+}
 
 #leftLeg {
     background-color: black;
@@ -12,8 +55,8 @@ body{
     height: 8px;
     transform: rotate(-60deg);
     position: absolute;
-    top: 350px;
-    left: 750px;
+    left: -20px;
+    top: 299px;
 }
 
 #rightLeg {
@@ -22,28 +65,28 @@ body{
     height: 8px;
     transform: rotate(60deg);
     position: absolute;
-    top: 350px;
-    left: 798px;
+    left: 30px;
+    top: 299px;
 }
 
-#bodyLine{
+#bodyLine {
     background-color: black;
     width: 100px;
     height: 8px;
     transform: rotate(90deg);
     position: absolute;
-    top: 261px;
-    left: 774px;
+    left: 4px;
+    top: 209px;
 }
 
-#head{
+#head {
     background: black;
     border-radius: 50%;
-    left: 787px;
     position: absolute;
-    top: 140px;
     width: 75px;
     height: 75px;
+    top: 89px;
+    left: 15px;
 }
 
 #leftHand {
@@ -52,8 +95,8 @@ body{
     height: 8px;
     transform: rotate(-145deg);
     position: absolute;
-    top: 241px;
-    left: 769px;
+    left: 1px;
+    top: 200px;
 }
 
 #rightHand {
@@ -62,6 +105,54 @@ body{
     height: 8px;
     transform: rotate(145deg);
     position: absolute;
-    top: 241px;
-    left: 820px;
+    top: 200px;
+    left: 48px;
 }
+
+#firstLine {
+    background-color: black;
+    width: 60px;
+    height: 8px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 64px;
+    left: 22px;
+}
+
+#secondLine {
+    background-color: black;
+    width: 130px;
+    height: 8px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 31px;
+    left: 48px;
+}
+
+#thirdLine {
+    background-color: black;
+    width: 340px;
+    height: 8px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 4px;
+    top: 205px;
+}
+
+#ground {
+    left: 96px;
+    top: 378px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    width: 150px;
+    height: 20px;
+}
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
