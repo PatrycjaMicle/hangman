@@ -6,44 +6,85 @@ body {
     background-size: cover;
 }
 
-h1{
+h1 {
     text-align: center;
-    font-size: 40px;
-    color: papayawhip;
+    font-size: 26px;
+    color: whitesmoke;
+    text-decoration-line: overline;
+    margin-top: 0;
 }
 
-h2{
-    margin:0;
+h2 {
+    margin: 0;
 }
 
-#word{
+#words {
     width: 420px;
     display: block;
     height: 600px;
-    background: orange;
     float: left;
 }
 
-#hangmanPic{
+.words {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+    background: rgba(60, 60, 60, 0.6);
+    border-radius: 16px;
+    padding: 4px;
+    color: whitesmoke;
+    font-weight: bolder;
+    max-width: 350px;
+    height: 40px;
+}
+
+.word {
+    margin-top: 8px;
+}
+
+button {
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    border-radius: 4px;
+    background: rgba(60, 179, 113, 0.9);
+    color: whitesmoke;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header {
+    padding: 1px;
+    margin-bottom: 30px;
+}
+
+#hangmanPic {
     width: 250px;
     height: 600px;
-    display: block;
     position: relative;
     float: left;
+}
+
+.hangmanpic {
+    display: none;
 }
 
 #categoryMenu {
     display: flex;
     flex-direction: column;
-    position:static;
+    position: static;
     background: rgba(60, 60, 60, 0.6);
     padding: 15px;
     width: 290px;
-    border-radius: 30px;
+    border-radius: 16px;
     color: ghostwhite;
 }
 
-.questions{
+.questions {
     font-size: large;
     margin-top: 8px;
     display: flex;
@@ -150,9 +191,32 @@ h2{
 }
 
 
-
-.container{
+.container {
     margin: 0 auto;
     max-width: 800px;
 }
 
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    width: fit-content;
+    display: none;
+}
+
+.closebtn {
+    margin-left: 150px;
+    margin-top: -5px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
