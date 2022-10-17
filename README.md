@@ -1,4 +1,4 @@
-#Hangman game
+# Hangman game
 
 Classic Hangman game.Click to play.
 
