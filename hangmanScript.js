@@ -32,6 +32,8 @@ function category(id) {
         choosedCat();
     }
     wordDIV.innerHTML = wordDisplay;
+    clearPic();
+    msgDiv.style='display:none';
 }
 
 
@@ -72,6 +74,7 @@ function clickedLetter(id) {
     if (typeof word !== "undefined" && word === wordDisplay) {
         msg.innerHTML = "Congratulations! You won.";
         msgDiv.style = 'display:block';
+        msgDiv.style.backgroundColor='green';
     }
 }
 
@@ -119,13 +122,18 @@ function wrongAnswer(x) {
 
 function clearHangman() {
     wordDIV.replaceChildren();
-    var hangman = document.getElementsByClassName('hangmanpic');
-    for (let i = 0; i < hangman.length; i++) {
-        hangman[i].style = 'display.none';
-    }
+   clearPic();
     var ele = document.getElementsByName("catAnswer");
     for (var i = 0; i < ele.length; i++) {
         ele[i].checked = false;
+    }
+    versuch = 0;
+}
+
+function clearPic(){
+    var hangman = document.getElementsByClassName('hangmanpic');
+    for (let i = 0; i < hangman.length; i++) {
+        hangman[i].style = 'display.none';
     }
     versuch = 0;
 }
