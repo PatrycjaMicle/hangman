@@ -28,7 +28,7 @@ function category(id) {
         word = "MONKEY";
         choosedCat();
     } else {
-        word = "SCHWEDEN";
+        word = "FRANCE";
         choosedCat();
     }
     wordDIV.innerHTML = wordDisplay;

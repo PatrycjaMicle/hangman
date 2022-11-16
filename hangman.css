@@ -1,9 +1,9 @@
 
 body {
-    margin: 20px;
     background-image: url(background.jpg);
     font-family: monospace;
     background-size: cover;
+    padding:2em;
 }
 
 h1 {
@@ -19,23 +19,23 @@ h2 {
 }
 
 #words {
-    width: 420px;
+    max-width:300px;
     display: block;
-    height: 600px;
+    height: fit-content;
     float: left;
 }
 
 .words {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size: xx-large;
     background: rgba(60, 60, 60, 0.6);
     border-radius: 16px;
     padding: 4px;
     color: whitesmoke;
     font-weight: bolder;
-    max-width: 350px;
+    max-width: 300px;
     height: 40px;
 }
 
@@ -57,14 +57,9 @@ button:hover {
     cursor: pointer;
 }
 
-header {
-    padding: 1px;
-    margin-bottom: 30px;
-}
-
 #hangmanPic {
-    width: 250px;
-    height: 600px;
+    width: 300px;
+    height: 450px;
     position: relative;
     float: left;
 }
@@ -193,7 +188,10 @@ header {
 
 .container {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: fit-content;
+    padding: 2em;
+    background: rgb(60, 60, 60, 0.5);
+    border-radius: 15px;
 }
 
 .alert {
@@ -203,6 +201,7 @@ header {
     margin-bottom: 15px;
     width: fit-content;
     display: none;
+    border-radius: 15px;
 }
 
 .closebtn {
