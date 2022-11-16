@@ -3,15 +3,10 @@ body {
     background-image: url(background.jpg);
     font-family: monospace;
     background-size: cover;
-    padding:2em;
-}
-
-h1 {
-    text-align: center;
-    font-size: 26px;
-    color: whitesmoke;
-    text-decoration-line: overline;
-    margin-top: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -19,10 +14,9 @@ h2 {
 }
 
 #words {
-    max-width:300px;
+    max-width: 280px;
     display: block;
     height: fit-content;
-    float: left;
 }
 
 .words {
@@ -44,7 +38,7 @@ h2 {
 }
 
 button {
-    font-size: xx-large;
+    font-size: large;
     font-weight: 900;
     margin-bottom: 4px;
     margin-right: 4px;
@@ -74,7 +68,7 @@ button:hover {
     position: static;
     background: rgba(60, 60, 60, 0.6);
     padding: 15px;
-    width: 290px;
+    max-width: 280px;
     border-radius: 16px;
     color: ghostwhite;
 }
@@ -82,27 +76,26 @@ button:hover {
 .questions {
     font-size: large;
     margin-top: 8px;
-    display: flex;
 }
 
 #leftLeg {
     background-color: black;
-    width: 100px;
+    width: 54px;
     height: 8px;
     transform: rotate(-60deg);
     position: absolute;
-    left: -20px;
-    top: 299px;
+    left: 13px;
+    top: 281px;
 }
 
 #rightLeg {
     background-color: black;
-    width: 100px;
+    width: 54px;
     height: 8px;
     transform: rotate(60deg);
     position: absolute;
-    left: 30px;
-    top: 299px;
+    left: 41px;
+    top: 281px;
 }
 
 #bodyLine {
@@ -167,31 +160,43 @@ button:hover {
 
 #thirdLine {
     background-color: black;
-    width: 340px;
-    height: 8px;
+    width: 201px;
+    height: 7px;
     transform: rotate(90deg);
     position: absolute;
-    left: 4px;
-    top: 205px;
+    left: 77px;
+    top: 128px;
 }
 
 #ground {
-    left: 96px;
-    top: 378px;
+    left: 123px;
+    top: 229px;
     background: black;
     border-radius: 50%;
     position: absolute;
-    width: 150px;
+    width: 100px;
     height: 20px;
 }
 
+@media (min-width: 576px) {
+    .cointainer {
+        display: block;
+    }
 
-.container {
-    margin: 0 auto;
-    max-width: fit-content;
-    padding: 2em;
-    background: rgb(60, 60, 60, 0.5);
-    border-radius: 15px;
+    .container {
+        display: flex;
+        max-width: fit-content;
+        padding: 2em;
+        border-radius: 15px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .cointainer {
+        display: flex;
+    }
 }
 
 .alert {
@@ -202,10 +207,13 @@ button:hover {
     width: fit-content;
     display: none;
     border-radius: 15px;
+    max-height: 50px;
+    margin-right: 1em;
 }
 
 .closebtn {
-    margin-left: 150px;
+    float: right;
+    margin-left: 2em;
     margin-top: -5px;
     color: white;
     font-weight: bold;
