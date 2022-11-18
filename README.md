@@ -13,7 +13,7 @@ Choose a category. Try to ask what is the searched word. With every wrong letter
 
 ## Used technologies
 
-Vanilla JavaScript.Click to play.
+Vanilla JavaScript.
 
 ## Link
 
