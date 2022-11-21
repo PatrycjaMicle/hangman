@@ -1,10 +1,12 @@
 # Hangman game
 
-Classic Hangman game.
+Hangman game. 
 
 ## Instructions
 
-Choose a category. Try to ask what is the searched word. With every wrong letter, you will  be closer to hang a man :) If man will be hanged - you lost.
+Choose a category. You have 3 possibilities to choose.
+Try to ask what is the searched word.
+You can as well use the game for your purpose and just change the searched words in JS file.
 
 ## Overview
 <p align="center">
