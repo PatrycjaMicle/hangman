@@ -1,12 +1,19 @@
 
 body {
-    background-image: url(background.jpg);
     font-family: monospace;
     background-size: cover;
-    padding: 2em;
+    padding-top:2em;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#App{
+    background-image: url(background.jpg);
+    background-size: cover;
+    padding:2em;
+    padding-top: 5em;
+    border-radius: 25px;
 }
 
 h2 {
@@ -43,7 +50,7 @@ button {
     margin-bottom: 4px;
     margin-right: 4px;
     border-radius: 4px;
-    background: rgba(60, 179, 113, 0.9);
+    background: rgba(21, 87, 92, 0.2);
     color: whitesmoke;
 }
 
@@ -66,10 +73,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     position: static;
-    background: rgba(60, 60, 60, 0.6);
+    background: rgba(60, 25, 60, 0.2);;
     padding: 15px;
     max-width: 280px;
-    border-radius: 16px;
+    border-radius: 4px;
     color: ghostwhite;
 }
 
@@ -79,7 +86,7 @@ button:hover {
 }
 
 #leftLeg {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 54px;
     height: 8px;
     transform: rotate(-60deg);
@@ -89,7 +96,7 @@ button:hover {
 }
 
 #rightLeg {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 54px;
     height: 8px;
     transform: rotate(60deg);
@@ -99,7 +106,7 @@ button:hover {
 }
 
 #bodyLine {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 100px;
     height: 8px;
     transform: rotate(90deg);
@@ -109,7 +116,7 @@ button:hover {
 }
 
 #head {
-    background: black;
+    background: rgba(58, 24, -1,0.9);
     border-radius: 50%;
     position: absolute;
     width: 75px;
@@ -119,7 +126,7 @@ button:hover {
 }
 
 #leftHand {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 60px;
     height: 8px;
     transform: rotate(-145deg);
@@ -129,7 +136,7 @@ button:hover {
 }
 
 #rightHand {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 60px;
     height: 8px;
     transform: rotate(145deg);
@@ -139,7 +146,7 @@ button:hover {
 }
 
 #firstLine {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 60px;
     height: 8px;
     transform: rotate(90deg);
@@ -149,7 +156,7 @@ button:hover {
 }
 
 #secondLine {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 130px;
     height: 8px;
     transform: rotate(180deg);
@@ -159,7 +166,7 @@ button:hover {
 }
 
 #thirdLine {
-    background-color: black;
+    background-color: rgba(58, 24, -1,0.9);
     width: 201px;
     height: 7px;
     transform: rotate(90deg);
@@ -171,18 +178,14 @@ button:hover {
 #ground {
     left: 123px;
     top: 229px;
-    background: black;
+    background: rgba(58, 24, -1,0.9);
     border-radius: 50%;
     position: absolute;
     width: 100px;
     height: 20px;
 }
 
-@media (min-width: 576px) {
-    .cointainer {
-        display: block;
-    }
-
+@media screen and (min-width: 576px) {
     .container {
         display: flex;
         max-width: fit-content;
@@ -193,7 +196,7 @@ button:hover {
 
 }
 
-@media (min-width: 768px) {
+@media screen and(min-width: 768px) {
     .cointainer {
         display: flex;
     }
@@ -209,6 +212,8 @@ button:hover {
     border-radius: 15px;
     max-height: 50px;
     margin-right: 1em;
+    position: absolute;
+    top: 20px;
 }
 
 .closebtn {
@@ -227,3 +232,4 @@ button:hover {
 .closebtn:hover {
     color: black;
 }
+
